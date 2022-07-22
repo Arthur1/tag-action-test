@@ -18,5 +18,5 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: "1.18.x"
-      - run: go install github.com/laher/goxc@latest golang.org/x/lint/golint@latest
+      - run: go install github.com/tcnksm/ghr@latest
       - run: ghr -u Arthur1 -r tag-action-test $VERSION_TAG dist/
